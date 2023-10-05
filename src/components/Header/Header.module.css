@@ -1,0 +1,12 @@
+.header {
+	height: 70px;
+
+	background-color: var(--lowOpacityBg);
+}
+
+.container {
+	margin: auto 0;
+	height: 100%;
+	max-width: 1780px;
+	margin: 0 auto;
+}

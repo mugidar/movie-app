@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --accentColor: #E13C52;
+  --textColor: black;
+  --bgColor: white;
+  --softBgColor: #706464;
+  --lowOpacityBg: rgba(189, 110, 110, 0.2);
+}
+
+.dark {
+  --accentColor: #E13C52;
+  --textColor: white;
+  --bgColor: black;
+  --softBgColor: #808080;
+  --lowOpacityBg: rgba(0, 0, 0, 0.2);
+}
+a,p, h1,h2,h3, button, span, div {
+  color: var(--textColor);
+}
+
+.block-container {
+  min-height: 100dvh;
+  max-width: 1780px;
+  margin: 0 auto;
+}
+
+body {
+
+  overflow-x: hidden;
+  background: url("/bg.png") gray ;
+  background-position: 0;
+ 
+}
+
+
+.button {
+  padding: 8px 28px;
+  background-color: var(--accentColor);
+  color: var(--textColor);
+  border-radius: 60px;
+}

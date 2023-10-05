@@ -1,0 +1,19 @@
+.ball {
+transition: .4s;
+    
+    position: absolute;
+    opacity: 1;
+
+    width: 30px;
+    height: 30px;
+    background-color: var(--softBgColor);
+    border-radius: 100%;
+}
+
+.themeToggle {
+    cursor: pointer;
+    position: relative;
+    background-color: var(--softBgColor);
+    padding: 5px;
+    border-radius: 50px;
+}

@@ -1,0 +1,7 @@
+.searchResults::-webkit-scrollbar {
+	display: none;
+}
+
+.searchResults {
+	background-color: var(--bgColor);
+}
