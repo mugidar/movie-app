@@ -8,6 +8,12 @@ async function getTopRated() {
 	)
 	return res
 }
+async function getUpcoming() {
+	const res = await fetcher(
+		'https://api.themoviedb.org/3/movie/upcoming?language=en-US&page=1'
+	)
+	return res
+}
 async function getGenres() {
 	const res = await fetcher(
 		'https://api.themoviedb.org/3/genre/movie/list?language=en'
@@ -17,13 +23,14 @@ async function getGenres() {
 
 const Films = async () => {
 	const {results:movies} = await getTopRated()
+	const {results:upcoming} = await getUpcoming()
 	const {results:genres} = await getGenres()
 	console.log(genres)
 	return (
 		<div className="block-container flex flex-col">
-			
-			<MoviesRow movies={movies} genres={genres} sectionTitle={'Recommended Films'} />
-			{/* <MoviesRow sectionTitle={'New Films'} longPosters={true} /> */}
+		
+			<MoviesRow movies={movies} genres={genres} sectionTitle={'Top Rated Films'} />
+			<MoviesRow movies={upcoming} sectionTitle={'Upcoming'} longPosters={true} /> 
 			{/* <MoviesRow sectionTitle={'Recommended TV'} /> */}
 		</div>
 	)

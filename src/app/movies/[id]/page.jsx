@@ -17,7 +17,7 @@ const page = async ({ params }) => {
 					<Image
 						alt=""
 						fill
-						className="object-contain"
+						className="object-cover"
 						src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`}
 					/>
 				</div>
@@ -39,6 +39,7 @@ const page = async ({ params }) => {
 							))}
 						</span>
 					</span>
+					<span className="text-xl">Release date: {movie.release_date}</span>
 					<span className="text-3xl">{movie.vote_average}</span>
 				</div>
 			</div>
