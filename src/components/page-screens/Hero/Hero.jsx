@@ -6,7 +6,7 @@ import { twMerge } from 'tailwind-merge'
 const Hero = () => {
 	return (
 		<div className="relative z-[0] h-[calc(100vh-70px)]">
-			<div className="block-container flex h-full ">
+			<div className="block-container !min-h-0  flex h-full ">
 				<div className="h-full w-screen ">
 					<Image alt="" fill src={'/slide.png'} className=" object-cover" />
 					<div className="relative z-10 flex flex-col items-start justify-center h-full  ">

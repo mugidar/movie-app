@@ -1,0 +1,45 @@
+.footer {
+	padding-top: 70px;
+	padding-bottom: 20px;
+	background-color: var(--softColor);
+}
+
+.title {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.description {
+	color: var(--softBgColor);
+}
+.socials > * {
+	border: 1px solid var(--softBgColor);
+	border-radius: 100%;
+	padding: 8px;
+    transition: .4s;
+}
+.socials > *:hover {
+	cursor: pointer;
+	color: rgb(35, 149, 255);
+	scale: 1.2;
+    border-color: rgb(35, 149, 255);
+}
+.politics > a {
+	color: var(--softBgColor);
+}
+.politics > a:hover {
+}
+.links_list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-weight: 300;
+	color: var(--softBgColor);
+}
+.links_list > li {
+	cursor: pointer;
+	transition: 0.4s;
+}
+.links_list > li:hover {
+	color: var(--textColor);
+}

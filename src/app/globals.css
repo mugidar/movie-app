@@ -2,45 +2,59 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 :root {
-  --accentColor: #E13C52;
-  --textColor: black;
-  --bgColor: white;
-  --softBgColor: #706464;
-  --lowOpacityBg: rgba(189, 110, 110, 0.2);
+	--accentColor: #e13c52;
+	--textColor: black;
+	--bgColor: white;
+	--softColor: #474747;
+	--softBgColor: #949494;
+	--lowOpacityBg: rgba(189, 110, 110, 0.2);
 }
 
 .dark {
-  --accentColor: #E13C52;
-  --textColor: white;
-  --bgColor: black;
-  --softBgColor: #808080;
-  --lowOpacityBg: rgba(0, 0, 0, 0.2);
+	--accentColor: rgb(185, 78, 78);
+	--textColor: white;
+	--bgColor: black;
+	--softColor: #1a1a1a;
+	--softBgColor: #808080;
+	--lowOpacityBg: rgba(0, 0, 0, 0.2);
 }
-a,p, h1,h2,h3, button, span, div {
-  color: var(--textColor);
+a,
+p,
+h1,
+h2,
+h3,
+button,
+span,
+div {
+	color: var(--textColor);
 }
 
 .block-container {
-  min-height: 100dvh;
-  max-width: 1780px;
-  margin: 0 auto;
+	min-height: 100dvh;
+	max-width: 1780px;
+	margin: 0 auto;
 }
 
+.footer-container {
+	max-width: 1780px;
+	margin: 0 auto;
+}
+* {
+	box-sizing: content-box;
+}
 body {
-
-  overflow-x: hidden;
-  background: url("/bg.png") gray ;
-  background-position: 0;
- 
+	overflow-x: hidden;
+	background: url('/bg.png') white;
+	background-blend-mode: hard-light;
+	background-size: 200%;
+	background-repeat: no-repeat;
+	background-position: 0;
 }
-
 
 .button {
-  padding: 8px 28px;
-  background-color: var(--accentColor);
-  color: var(--textColor);
-  border-radius: 60px;
+	padding: 8px 28px;
+	background-color: var(--accentColor);
+	color: var(--textColor);
+	border-radius: 60px;
 }

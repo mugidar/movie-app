@@ -10,7 +10,7 @@ const ThemeProvider = ({ children }) => {
 		setIsMounted(true)
 	}, [])
 
-	return <div className={theme}>{children}</div>
+	if(isMounted) return <div className={theme}>{children}</div>
 }
 
 export default ThemeProvider

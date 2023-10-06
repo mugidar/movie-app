@@ -1,4 +1,4 @@
-export const fetcher = async (endpoint, query, filters) => {
+export const fetcher = async (endpoint) => {
 	const options = {
 		method: 'GET',
 		headers: {
@@ -7,7 +7,7 @@ export const fetcher = async (endpoint, query, filters) => {
 		}
 	}
 
-	const res = await fetch(`https://api.themoviedb.org/3/${endpoint}`, options)
+	const res = await fetch(endpoint, options)
 
 	return await res.json()
 }

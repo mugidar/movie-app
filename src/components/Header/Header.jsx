@@ -7,6 +7,7 @@ import SearchInput from '../Search/SearchInput'
 import AuthLink from '../AuthLink/AuthLink'
 import { twMerge } from 'tailwind-merge'
 import ThemeToggle from '../themeToggle/ThemeToggle'
+import Logo from '../ui/Logo/Logo'
 
 const routes = [
 	{ url: '/movies', title: 'Movies' },
@@ -20,9 +21,7 @@ const Header = () => {
 		<header className={styles.header}>
 			<div className={twMerge('flex justify-between', styles.container)}>
 				<div className="flex gap-4 items-center justify-around">
-					<Link href={'/'}>
-						<Image alt='' width={100} height={50} src={'/logo_light.png'} />
-					</Link>
+					<Logo/>
 					<ul className="flex gap-2">
 						{routes.map(route => (
 							<Link key={route.url} href={route.url}>

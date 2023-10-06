@@ -1,0 +1,41 @@
+.title {
+	font-size: 32px;
+	color: var(--textColor);
+}
+.moviePreview {
+    cursor: pointer;
+	position: relative;
+	border: 1px solid #32a071;
+	border-radius: 12px;
+	overflow: hidden;
+transition: .4s;
+}
+.moviePreview:hover {
+   scale: 1.4;
+}
+.shortDetails {
+
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: 0;
+    text-align: center;
+	top: 50%;
+}
+
+
+.logo {
+    border-top-left-radius: 12px;
+    padding: 12px;
+	background-color: var(--softBgColor);
+}
+
+.rating {
+    border: 1px solid var(--softBgColor);
+    position: relative;
+    top: -10px;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    font-weight: bold;
+	background-color: var(--bgColor);
+}
