@@ -35,7 +35,7 @@ const page = async ({ params }) => {
 						<em>Language: </em>
 						<span className="flex gap-2">
 							{movie.spoken_languages.map(language => (
-								<span>{language.english_name},</span>
+								<span key={langauge.english_name}>{language.english_name},</span>
 							))}
 						</span>
 					</span>

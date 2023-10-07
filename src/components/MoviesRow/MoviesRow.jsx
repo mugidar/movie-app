@@ -15,12 +15,20 @@ const MoviesRow = ({ longPosters, sectionTitle, movies, genres }) => {
 			</span>
 			<div className="flex justify-between">
 				{movies?.length > 0 ? (
-					movies.slice(0,6).map(item => <MoviePreview key={item.id} genres={genres} {...item} longPoster={longPosters} />)
+					movies
+						.slice(0, 6)
+						.map(item => (
+							<MoviePreview
+								key={item.id}
+								genres={genres}
+								{...item}
+								longPoster={longPosters}
+							/>
+						))
 				) : (
 					<h1>Nothing</h1>
 				)}
 			</div>
-		
 		</div>
 	)
 }
