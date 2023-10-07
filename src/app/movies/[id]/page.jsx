@@ -34,13 +34,14 @@ const page = async ({ params }) => {
 					<span className="flex gap-5">
 						<em>Language: </em>
 						<span className="flex gap-2">
-							{movie.spoken_languages.map(language => (
-								<span key={langauge.english_name}>{language.english_name},</span>
-							))}
+							{movie.spoken_languages.length > 0 &&
+								movie.spoken_languages.map((language, index) => (
+									<span key={index}>{language.english_name},</span>
+								))}
 						</span>
 					</span>
 					<span className="text-xl">Release date: {movie.release_date}</span>
-					<span className="text-3xl">{movie.vote_average}</span>
+					<span className="text-3xl">Rating: {movie.vote_average.toFixed(1)}</span>
 				</div>
 			</div>
 		</div>
